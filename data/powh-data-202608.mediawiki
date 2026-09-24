@@ -121,7 +121,7 @@
 
 === 〇｜数据源独立性声明 ===
 
-* '''本次计算数据源'''：Jouleverse/workspace '''issue#2'''（8月节点审计，2026-09-03）／'''issue#3'''（WP-3）／'''issue#7'''（WP-7）／'''issue#8'''（WP-8）／'''issue#15'''（WP-15）；'''[https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]'''（JVCore 0x8d2144…，块窗 8,033,634~8,212,194，RPC '''$JNS_DAO_RPC_URL'''〔授权端点、不公开〕）；'''open-meetings/[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830]'''（5 场）；'''wiki blog/2026/202608/'''（4 篇已发表稿）；'''spec rev8 / v2 rev9 费率'''。
+* '''本次计算数据源'''：Jouleverse/workspace '''issue#2'''（8月节点审计，2026-09-03）／'''issue#3'''（WP-3）／'''issue#7'''（WP-7）／'''issue#8'''（WP-8）／'''issue#15'''（WP-15）；'''[https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]'''（JVCore 0x8d2144…，块窗 8,033,634~8,212,194，RPC '''$JNS_DAO_RPC_URL'''〔授权端点、不公开〕）；'''open-meetings/[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830]'''（5 场）；'''wiki blog/2026/202608/'''（4 篇已发表稿）；'''spec rev8 / v2 rev9 费率'''。
 * '''独立性声明'''：本附注结果系依据 spec 规则、基于上述原始证据'''独立算出'''；对照表（2026-08月powh复核明细表）'''仅用于比对'''，'''未读取对照表回填'''。
 * '''例外标注'''：无。
 
@@ -152,6 +152,26 @@
 * '''8 月适用【旧规】'''：非标贡献上报截止 = '''2026-09-15 24:00'''（新规「次月 5 日」自 2026-09 起执行，'''不适用于 8 月'''）。
 * '''取数覆盖核查'''：已重查 '''9/4–9/15''' ⇒ '''无新增''' WP 上报（A）。
 * ⚠️ '''新旧两说并列'''：spec（v2 rev9）原文写「截止时间为'''次月 5 日 24:00'''」（B）；本地月度统计SOP.md／统计时间规则.md v3 写「15 日 24:00 截止 / 16 日起统计」（B，'''非 spec 原文'''）。'''8 月按旧规 9/15 执行'''。
+
+=== 〇-2｜链接可达性说明（逐条已实测） ===
+
+{| 
+! 类别 !! 直连状态 !! 说明
+|-
+| 多签人名单（WP-1 依据） || ✅ 可直连 || 组织仓库 contracts-reference.md「创世金库多签人」表（公开可访问）
+|-
+| WP 上报凭据（issue） || ✅ 可直连 || 均带 #issuecomment-xxx 锚点，直达 9/3 上报评论（非 issue 首页）
+|-
+| 会议纪要（WP-6） || ✅ 可直连 || open-meetings/core/ 五个 .md 文件
+|-
+| 已发表稿件（WP-13） || ✅ 可直连 || wiki blog/2026/202608/ 四篇 .md
+|-
+| 链上签到（WP-2） || 🟡 部分 || 已给 [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] （公开浏览器）；逐笔 tx 直连需授权 RPC ⇒ 标注「需授权，J-53 可代查」
+|-
+| 内部 RPC（rpc.jnsdao.com:8503） || 🔴 不列链接 || 授权端点、不公开 ⇒ 一律以 $JNS_DAO_RPC_URL 占位
+|}
+
+> 需授权项汇总：需授权，J-53 可代查（链上签到逐笔 tx） —— 公开浏览器仅能到合约地址页，逐笔定位需授权 RPC。
 
 === 一｜取数完整性核查（9/4–9/15） ===
 
@@ -198,9 +218,9 @@
 |-
 | 1 || WP-1 || 多签 || J-0 行 · WP-1 多签人(小时)列 || [https://github.com/Jouleverse/workspace/blob/main/script/contracts-reference.md 创世金库多签人名单] || — || 1.5 || 0.5h/月/钱包/签名人 || 692.31 || 110.76 || B
 |-
-| 2 || WP-2 || 记账节点 || J-0 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（[https://github.com/Jouleverse/workspace/issues/2#issuecomment-5522350385 issue#2 审计] 名单） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 110.76 || A
+| 2 || WP-2 || 记账节点 || J-0 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（[https://github.com/Jouleverse/workspace/issues/2#issuecomment-5522350385 issue#2 审计] 名单） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 110.76 || A
 |-
-| 3 || WP-2 || 见证节点 || J-0 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 110.76 || A
+| 3 || WP-2 || 见证节点 || J-0 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 110.76 || A
 |-
 | 4 || WP-6 || 会务 || J-0 行 · WP-6 CGC(小时)列 || [https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830] || 2026-08-02/09/16/23/30 || 9.5 || 预定0.5/主持2/发言0.5（每次） || 4384.62 || 110.76 || A/B
 |-
@@ -216,7 +236,7 @@
 |-
 | 7 || WP-1 || 多签 || J-9 行 · WP-1 多签人(小时)列 || [https://github.com/Jouleverse/workspace/blob/main/script/contracts-reference.md 创世金库多签人名单] || — || 1.5 || 0.5h/月/钱包/签名人 || 692.31 || 9.23 || B
 |-
-| 8 || WP-2 || 记账节点 || J-9 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194） || 2026-08 || 0.5 || 0.5h（未签到 slash） || 230.77 || 9.23 || A/B
+| 8 || WP-2 || 记账节点 || J-9 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 0.5 || 0.5h（未签到 slash） || 230.77 || 9.23 || A/B
 |}
 
 ==== J-18 ：合计 h=11.5 → 53.07 万WJ ====
@@ -226,9 +246,9 @@
 |-
 | 9 || WP-1 || 多签 || J-18 行 · WP-1 多签人(小时)列 || [https://github.com/Jouleverse/workspace/blob/main/script/contracts-reference.md 创世金库多签人名单] || — || 1.5 || 0.5h/月/钱包/签名人 || 692.31 || 53.07 || B
 |-
-| 10 || WP-2 || 记账节点 || J-18 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
+| 10 || WP-2 || 记账节点 || J-18 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
 |-
-| 11 || WP-2 || 见证节点 || J-18 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
+| 11 || WP-2 || 见证节点 || J-18 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
 |}
 
 ==== J-25 ：合计 h=50.5 → 233.07 万WJ ====
@@ -238,9 +258,9 @@
 |-
 | 12 || WP-1 || 多签 || J-25 行 · WP-1 多签人(小时)列 || [https://github.com/Jouleverse/workspace/blob/main/script/contracts-reference.md 创世金库多签人名单] || — || 1.5 || 0.5h/月/钱包/签名人 || 692.31 || 233.07 || B
 |-
-| 13 || WP-2 || 记账节点 || J-25 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 233.07 || A
+| 13 || WP-2 || 记账节点 || J-25 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 233.07 || A
 |-
-| 14 || WP-2 || 见证节点 || J-25 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 233.07 || A
+| 14 || WP-2 || 见证节点 || J-25 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 233.07 || A
 |-
 | 15 || WP-3 || 统计/执行 || J-25 行 · wp-3 powh(小时)列 || github 报告：[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报] || 2026-09-03 || 7 || 直报 || 3230.77 || 233.07 || B
 |-
@@ -258,9 +278,9 @@
 |-
 | 19 || WP-1 || 多签 || J-29 行 · WP-1 多签人(小时)列 || [https://github.com/Jouleverse/workspace/blob/main/script/contracts-reference.md 创世金库多签人名单] || — || 1.5 || 0.5h/月/钱包/签名人 || 692.31 || 122.30 || B
 |-
-| 20 || WP-2 || 记账节点 || J-29 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 122.30 || A
+| 20 || WP-2 || 记账节点 || J-29 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 122.30 || A
 |-
-| 21 || WP-2 || 见证节点 || J-29 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 122.30 || A
+| 21 || WP-2 || 见证节点 || J-29 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 122.30 || A
 |-
 | 22 || WP-3 || 执行 || J-29 行 · wp-3 powh(小时)列 || 补 202512~202606 积压 7 次：[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报] || 2026-09-03 || 14 || 2h/次 || 6461.54 || 122.30 || B
 |-
@@ -272,7 +292,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 24 || WP-2 || 记账+见证 || J-4 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（各 1 个，均签到，块窗 8,033,634~8,212,194） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
+| 24 || WP-2 || 记账+见证 || J-4 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
 |}
 
 ==== J-6 ：合计 h=10 → 46.15 万WJ ====
@@ -280,7 +300,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 25 || WP-2 || 记账+见证 || J-6 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（各 1 个，均签到，块窗 8,033,634~8,212,194） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
+| 25 || WP-2 || 记账+见证 || J-6 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
 |}
 
 ==== J-7 ：合计 h=10 → 46.15 万WJ ====
@@ -288,7 +308,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 26 || WP-2 || 记账+见证 || J-7 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（各 1 个，均签到，块窗 8,033,634~8,212,194） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
+| 26 || WP-2 || 记账+见证 || J-7 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
 |}
 
 ==== J-17 ：合计 h=10 → 46.15 万WJ ====
@@ -296,7 +316,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 27 || WP-2 || 记账+见证 || J-17 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（各 1 个，均签到，块窗 8,033,634~8,212,194） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
+| 27 || WP-2 || 记账+见证 || J-17 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
 |}
 
 ==== J-31 ：合计 h=10 → 46.15 万WJ ====
@@ -304,7 +324,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 28 || WP-2 || 记账+见证 || J-31 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（各 1 个，均签到，块窗 8,033,634~8,212,194） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
+| 28 || WP-2 || 记账+见证 || J-31 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 46.15 || A
 |}
 
 ==== J-33 ：合计 h=5 → 23.07 万WJ ====
@@ -312,7 +332,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 29 || WP-2 || 记账节点 || J-33 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 29 || WP-2 || 记账节点 || J-33 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-34 ：合计 h=0.5 → 2.30 万WJ ====
@@ -320,7 +340,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 30 || WP-2 || 记账节点 || J-34 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194） || 2026-08 || 0.5 || 0.5h（未签到 slash） || 230.77 || 2.30 || A/B
+| 30 || WP-2 || 记账节点 || J-34 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 0.5 || 0.5h（未签到 slash） || 230.77 || 2.30 || A/B
 |}
 
 ==== J-37 ：合计 h=5 → 23.07 万WJ ====
@@ -328,7 +348,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 31 || WP-2 || 记账节点 || J-37 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 31 || WP-2 || 记账节点 || J-37 行 · 主网记账(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-53 ：合计 h=20.5 → 94.61 万WJ ====
@@ -336,7 +356,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 32 || WP-2 || 记账+见证 || J-53 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（各 1 个，均签到，块窗 8,033,634~8,212,194） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 94.61 || A
+| 32 || WP-2 || 记账+见证 || J-53 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 94.61 || A
 |-
 | 33 || WP-3 || 统计+录入 || J-53 行 · wp-3 powh(小时)列 || 统计分工记录（[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报]） || 2026-09-03 || 6 || 直报 || 2769.23 || 94.61 || B
 |-
@@ -348,7 +368,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 35 || WP-2 || 见证节点 || J-14 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194） || 2026-08 || 0 || 0h（未签到 slash） || 0.00 || 0.00 || A/B
+| 35 || WP-2 || 见证节点 || J-14 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 0 || 0h（未签到 slash） || 0.00 || 0.00 || A/B
 |}
 
 ==== J-27 ：合计 h=5 → 23.07 万WJ ====
@@ -356,7 +376,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 36 || WP-2 || 见证节点 || J-27 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 36 || WP-2 || 见证节点 || J-27 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-42 ：合计 h=5 → 23.07 万WJ ====
@@ -364,7 +384,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 37 || WP-2 || 见证节点 || J-42 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 37 || WP-2 || 见证节点 || J-42 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-52 ：合计 h=5 → 23.07 万WJ ====
@@ -372,7 +392,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 38 || WP-2 || 见证节点 || J-52 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 38 || WP-2 || 见证节点 || J-52 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-54 ：合计 h=5 → 23.07 万WJ ====
@@ -380,7 +400,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 39 || WP-2 || 见证节点 || J-54 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 39 || WP-2 || 见证节点 || J-54 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-57 ：合计 h=5 → 23.07 万WJ ====
@@ -388,7 +408,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 40 || WP-2 || 见证节点 || J-57 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 40 || WP-2 || 见证节点 || J-57 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-58 ：合计 h=5 → 23.07 万WJ ====
@@ -396,7 +416,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 41 || WP-2 || 见证节点 || J-58 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 41 || WP-2 || 见证节点 || J-58 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-59 ：合计 h=5 → 23.07 万WJ ====
@@ -404,7 +424,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 42 || WP-2 || 见证节点 || J-59 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 42 || WP-2 || 见证节点 || J-59 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-60 ：合计 h=5 → 23.07 万WJ ====
@@ -412,7 +432,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 43 || WP-2 || 见证节点 || J-60 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 43 || WP-2 || 见证节点 || J-60 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-61 ：合计 h=5 → 23.07 万WJ ====
@@ -420,7 +440,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 44 || WP-2 || 见证节点 || J-61 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 44 || WP-2 || 见证节点 || J-61 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-65 ：合计 h=0 → 0.00 万WJ（在册 · 未签到） ====
@@ -428,7 +448,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 45 || WP-2 || 见证节点 || J-65 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194） || 2026-08 || 0 || 0h（未签到 slash） || 0.00 || 0.00 || A/B
+| 45 || WP-2 || 见证节点 || J-65 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 0 || 0h（未签到 slash） || 0.00 || 0.00 || A/B
 |}
 
 ==== J-66 ：合计 h=5 → 23.07 万WJ ====
@@ -436,7 +456,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 46 || WP-2 || 见证节点 || J-66 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
+| 46 || WP-2 || 见证节点 || J-66 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 23.07 || A
 |}
 
 ==== J-67 ：合计 h=11.5 → 53.07 万WJ ====
@@ -444,7 +464,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 47 || WP-2 || 见证节点 || J-67 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore]（签到，块窗 8,033,634~8,212,194） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
+| 47 || WP-2 || 见证节点 || J-67 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
 |-
 | 48 || WP-3 || 主管/合并 || J-67 行 · wp-3 powh(小时)列 || 统计分工记录（[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报]） || 2026-09-03 || 3 || 主管 2 + 合并 1（直报） || 1384.62 || 53.07 || B
 |-
@@ -456,7 +476,7 @@
 {|
 ! 行号 !! WP !! 分项 !! 对应表格格子 !! 原始依据 !! 日期 !! h !! 费率 !! 过程值(万WJ) !! 该员WJ(万WJ) !! 分级
 |-
-| 50 || WP-2 || 见证节点 || J-69 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194） || 2026-08 || 0 || 0h（未签到 slash） || 0.00 || 0.00 || A/B
+| 50 || WP-2 || 见证节点 || J-69 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] 无记录 ⇒ 减记（块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 0 || 0h（未签到 slash） || 0.00 || 0.00 || A/B
 |}
 
 ==== J-12 ：合计 h=3 → 13.84 万WJ ====
