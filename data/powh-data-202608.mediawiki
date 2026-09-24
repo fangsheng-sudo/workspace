@@ -123,7 +123,7 @@
 
 === 〇｜数据源独立性声明 ===
 
-* '''本次计算数据源'''：Jouleverse/workspace '''issue#2'''（8月节点审计，2026-09-03）／'''issue#3'''（WP-3）／'''issue#7'''（WP-7）／'''issue#8'''（WP-8）／'''issue#15'''（WP-15）；'''[https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]'''（JVCore 0x8d2144…，块窗 8,033,634~8,212,194，RPC '''$JNS_DAO_RPC_URL'''〔授权端点、不公开〕）；'''open-meetings/[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830]'''（5 场）；'''wiki blog/2026/202608/'''（4 篇已发表稿）；'''spec rev8 / v2 rev9 费率'''。
+* '''本次计算数据源'''：Jouleverse/workspace '''issue#2'''（8月节点审计，2026-09-03）／'''issue#3'''（WP-3）／'''issue#7'''（WP-7）／'''issue#8'''（WP-8）／'''issue#15'''（WP-15）；'''[https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]'''（JVCore 0x8d2144…，块窗 8,033,634~8,212,194，RPC '''$JNS_DAO_RPC_URL'''〔内部端点，可匿名访问，属内部基础设施，不保证长期开放与可用性；不公开列出地址，如需核对请联系 J-53〕）；'''open-meetings/[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830]'''（5 场）；'''wiki blog/2026/202608/'''（4 篇已发表稿）；'''spec rev8 / v2 rev9 费率'''。
 * '''独立性声明'''：本附注结果系依据 spec 规则、基于上述原始证据'''独立算出'''；对照表（2026-08月powh复核明细表）'''仅用于比对'''，'''未读取对照表回填'''。
 * '''例外标注'''：无。
 
@@ -170,7 +170,7 @@
 |-
 | 链上签到（WP-2） || ✅ 可自助核对 || 公开入口（均已实测 HTTP 200）：① '''Core 签到页''' [https://jscan.jnsdao.com/#/core/checkin/ jscan.jnsdao.com/#/core/checkin/] —— 按月浏览（含 2026-08）各 Core ID 的'''签到次数与首/末区块、首/末时间'''；② '''地址页''' '''https://jscan.jnsdao.com/#/address/<本人地址>''' —— '''填入本人地址'''，于「Core链上签到」区块查看本人持有的签到徽章（含月份标签）。'''逐笔 tx hash'''：8 月未公开归档（`data/powh-transactionHash-*` 现存最新至 202606）⇒ 逐笔直连仍不可构造；但'''签到有无之核对已可自助完成，无需授权'''（实测：jscan 公开 tx 页格式 '''#/tx/<hash>''' 为 200，受限于未归档）
 |-
-| 内部 RPC（$JNS_DAO_RPC_URL，授权端点、不公开） || 🔴 不列链接 || 授权端点、不公开 ⇒ 一律以 $JNS_DAO_RPC_URL 占位
+| 内部 RPC（$JNS_DAO_RPC_URL，内部端点，可匿名访问，不保证长期开放） || 🔴 不列链接 || 属内部基础设施、不保证长期开放与可用性 ⇒ 不公开列出地址，一律以 $JNS_DAO_RPC_URL 占位；如需核对请联系 J-53
 |}
 
 > 链上签到自查：入口见上表（'''Core 签到页''' / '''地址页填本人地址'''）；'''逐笔 tx hash 因 8 月未归档暂不可直连'''，如需逐笔定位请联系 J-53 代查。
