@@ -168,7 +168,7 @@
 |-
 | 链上签到（WP-2） || 🟡 部分 || 已给 [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] （公开浏览器）；逐笔 tx 直连需授权 RPC ⇒ 标注「需授权，J-53 可代查」
 |-
-| 内部 RPC（rpc.jnsdao.com:8503） || 🔴 不列链接 || 授权端点、不公开 ⇒ 一律以 $JNS_DAO_RPC_URL 占位
+| 内部 RPC（$JNS_DAO_RPC_URL，授权端点、不公开） || 🔴 不列链接 || 授权端点、不公开 ⇒ 一律以 $JNS_DAO_RPC_URL 占位
 |}
 
 > 需授权项汇总：需授权，J-53 可代查（链上签到逐笔 tx） —— 公开浏览器仅能到合约地址页，逐笔定位需授权 RPC。
