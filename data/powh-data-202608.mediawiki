@@ -29,7 +29,7 @@
 
 == 2026年8月统计数据表 ==
 
-> 数据溯源见本页末尾【附注：逐条溯源说明】（每个数字可反向追溯）
+> 数据溯源：见本表下方【附注：逐条溯源说明】
 
 统计人：J-67
 {|
@@ -100,6 +100,8 @@
 |-
 |}
 
+> 注（合计行口径）：合计行「激励额度 = '''1200.00 万WJ'''」为【池值口径】；逐人实发合计 = '''1199.84 万WJ'''，尾差 = '''0.16 万WJ（= 1,600 WJ）'''归入「创世金库」（见上方「创世金库」行）。
+
 '''本月口径说明与标注'''
 
 * '''统计规范'''：依 J-25 给出的 '''rev9'''（试行版，以最新为准）。⚠️ 注：2026-08 统计发生时点上，实际生效规范为 '''rev8'''；两版在 8 月所涉计件费率上完全一致，本表数值不受影响（B）。
@@ -110,14 +112,14 @@
 * '''尾差'''：逐人 WJ 保留两位小数（第三位起向下舍去），实发合计 '''1199.84 万WJ'''；尾差 '''0.16 万WJ（= 1,600 WJ）'''归入'''创世金库'''（B）。
 * '''旧式等价说明'''：旧式 FLOOR(…×120000,1)/100 与之等价，沿用不致误；但规范式直观体现池值 1200（B）。
 * '''WP-13'''：按 wiki 实际完成月归集；8 月已发表 4 篇（[https://github.com/Jouleverse/wiki/blob/main/blog/2026/202608/2026-08-xx-CGC20260802-meeting-minutes.md 0802]·[https://github.com/Jouleverse/wiki/blob/main/blog/2026/202608/2026-08-xx-CGC20260809-meeting-minutes.md 0809]·[https://github.com/Jouleverse/wiki/blob/main/blog/2026/202608/2026-08-xx-CGC20260816-meeting-minutes.md 0816]·[https://github.com/Jouleverse/wiki/blob/main/blog/2026/202608/2026-08-XX-CGC20260823-meeting-minutes.md 0823]），编辑/审校 4×1.5=6.0h；投稿 0h（4 篇尾部均无「投稿人」标注）（A/B）。
-* '''零贡献列已删除（自 2026-08 起）'''：'''WP-4 社群'''列全部在册人员均为 0（无申报）⇒ '''整列删除'''（表头+全列）。其余空单元格(无申报项)仍留空（B）。
+* '''零贡献列已删除（自 2026-08 起）'''：'''WP-4 社群'''列全部在册人员均为 0（无申报）⇒ '''整列删除'''（表头+全列）。'''WP-7 有 J-29 的 1h ⇒ 保留'''。其余空单元格(无申报项)仍留空（B）。
 * '''数据源独立性声明'''：见本页末尾【附注：逐条溯源说明】〇节；本表结果系依 spec 规则、基于原始证据独立算出，对照表仅用于比对，未读取对照表回填；例外标注=无。
 
 == 附注：逐条溯源说明 ==
 
 > 本节为上方【2026年8月统计数据表】的'''逐条溯源附注'''：每个数字均可反向追溯至原始凭据。
 > 组织方式：按 '''J-N''' 分组，'''顺序与上方表格行序完全一致'''；每条注明其对应的'''表格行与列'''。
-> '''原始依据列均为可点击直连链接''''''，各位可点击核对自己每一条的凭据；标注「需授权」的请联系 J-53 代查。
+> '''原始依据列均为可点击直连链接'''，各位可点击核对自己每一条的凭据；标注「需授权」的请联系 J-53 代查。
 
 === 〇｜数据源独立性声明 ===
 
@@ -166,7 +168,7 @@
 |-
 | 已发表稿件（WP-13） || ✅ 可直连 || wiki blog/2026/202608/ 四篇 .md
 |-
-| 链上签到（WP-2） || 🟡 部分 || 已给 [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页] （公开浏览器）；逐笔 tx 直连需授权 RPC ⇒ 标注「需授权，J-53 可代查」
+| 链上签到（WP-2） || 🟡 部分 || 已给 [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（公开浏览器）。**已实测：jscan 确有公开 tx 页**，格式 '''https://jscan.jnsdao.com/#/tx/<hash>''' （实测 200；窄形 `/tx/<hash>` 跳转同页）；但 **8 月逐笔 CheckIn 的 tx hash 未公开归档**（`data/powh-transactionHash-*` 现存最新只到 202606）⇒ **无法构造直连**，保留「需授权，J-53 可代查」
 |-
 | 内部 RPC（$JNS_DAO_RPC_URL，授权端点、不公开） || 🔴 不列链接 || 授权端点、不公开 ⇒ 一律以 $JNS_DAO_RPC_URL 占位
 |}
@@ -358,7 +360,7 @@
 |-
 | 32 || WP-2 || 记账+见证 || J-53 行 · 主网记账(个) / 主网见证(个) 列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（各 1 个，均签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 10 || 5h/月/节点 × 2 || 4615.38 || 94.61 || A
 |-
-| 33 || WP-3 || 统计+录入 || J-53 行 · wp-3 powh(小时)列 || 统计分工记录（[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报]） || 2026-09-03 || 6 || 直报 || 2769.23 || 94.61 || B
+| 33 || WP-3 || 统计主管+录入+检查及合并 || J-53 行 · wp-3 powh(小时)列 || 统计分工记录（[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报]） || 2026-09-03 || 6 || 直报 || 2769.23 || 94.61 || B
 |-
 | 34 || WP-6 || 会务 || J-53 行 · WP-6 CGC(小时)列 || [https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830] || 2026-08 || 4.5 || 书记 2 / 发言 0.5（每次） || 2076.92 || 94.61 || A/B
 |}
@@ -466,7 +468,7 @@
 |-
 | 47 || WP-2 || 见证节点 || J-67 行 · 主网见证(个)列 || [https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]（签到，块窗 8,033,634~8,212,194；逐笔 tx 直连需授权 RPC ⇒「需授权，J-53 可代查」） || 2026-08 || 5 || 5h/月/节点 || 2307.69 || 53.07 || A
 |-
-| 48 || WP-3 || 主管/合并 || J-67 行 · wp-3 powh(小时)列 || 统计分工记录（[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报]） || 2026-09-03 || 3 || 主管 2 + 合并 1（直报） || 1384.62 || 53.07 || B
+| 48 || WP-3 || 统计人 || J-67 行 · wp-3 powh(小时)列 || 统计分工记录（[https://github.com/Jouleverse/workspace/issues/3#issuecomment-5519336627 issue#3 上报]） || 2026-09-03 || 3 || 直报 || 1384.62 || 53.07 || B
 |-
 | 49 || WP-6 || 会务 || J-67 行 · WP-6 CGC(小时)列 || [https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830] || 2026-08 || 3.5 || 预定 0.5 / 书记 2 / 发言 0.5 || 1615.38 || 53.07 || A/B
 |}
