@@ -33,6 +33,9 @@
 
 统计人：J-67
 {|
+|-
+| colspan="15" style="text-align:left; background:#f2f2f2" | ''【折算系数】工时(wh)=工作量×系数：多签 0.5h/个；记账 5h(签)/0.5h(未签)；见证 5h(签)/0h(未签)，每人每类至多 1 个；WP-3 统计主管 2h / 统计 4h / 录入 2h / 合并 1h / 执行 2h；WP-6 预定 0.5h / 主持(书记) 2h / 发言 0.5h；WP-13 编辑 1h / 审校 0.5h / 投稿 2h。WP-3(github报告)、WP-7、WP-8、WP-15 为直报值(无费率)。符号约定：0 = 当月确认为 0；留空 = 无该项。''
+|-
 | Core Id(按多签、记账、见证、无节点贡献者排列) || 链上签到(签1,未签0)|| [[https://github.com/jouleverse/workspace/issues/1|WP-1]] 多签人(小时) || 主网记账(个) || 主网见证(个) ||[[https://github.com/jouleverse/workspace/issues/2|WP-2]] 节点有效汇总(小时)  || [[https://github.com/Jouleverse/workspace/tree/main/data|wp-3]] powh(小时) || [[https://github.com/Jouleverse/workspace/issues/6|WP-6]] CGC(小时) || [[https://github.com/Jouleverse/workspace/issues/7|wp-7]] 节点审计(小时) || [[https://github.com/Jouleverse/workspace/issues/8|wp-8]] 区块链浏览器(小时) || [[https://github.com/Jouleverse/workspace/issues/13|wp-13]] 白皮书和网站(小时) || [[https://github.com/Jouleverse/workspace/issues/15|wp-15]]核心治理工具集开发(小时)||工作量(小时)合计||占比(%)||激励额度(万wj)
 |-
 | J-0 || 1 || 1.5 || 1 || 1 || 10 || - || 9.5 || - || - || 3 || - || 24 || 9.2308 || 110.76
