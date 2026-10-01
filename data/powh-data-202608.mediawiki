@@ -18,7 +18,7 @@
 | J-53
 |-
 | 定稿日期
-|  
+| 2026年10月2日
 |-
 | 执行日期
 |  
@@ -36,7 +36,7 @@
 |-
 | colspan="14" style="text-align:left; background:#f2f2f2" | ''【折算系数】工时(wh)=工作量×系数：多签 0.5h/个；记账 5h(签)/0.5h(未签)；见证 5h(签)/0h(未签)，每人每类至多 1 个；WP-3 统计主管 2h / 统计 4h / 录入 2h / 合并 1h / 执行 2h；WP-6 预定 0.5h / 主持(书记) 2h / 发言 0.5h；WP-13 编辑 1h / 审校 0.5h / 投稿 2h。WP-3(github报告)、WP-7、WP-8、WP-15 为直报值(无费率)。符号约定：0 = 当月确认为 0；留空 = 无该项。''
 |-
-| Core Id(按多签、记账、见证、无节点贡献者排列) || 链上签到(签1,未签0)|| [[https://github.com/jouleverse/workspace/issues/1|WP-1]] 多签人(小时) || 主网记账(个) || 主网见证(个) ||[[https://github.com/jouleverse/workspace/issues/2|WP-2]] 节点有效汇总(小时)  || [[https://github.com/Jouleverse/workspace/tree/main/data|wp-3]] powh(小时) || [[https://github.com/Jouleverse/workspace/issues/6|WP-6]] CGC(小时) || [[https://github.com/Jouleverse/workspace/issues/7|wp-7]] 节点审计(小时) || [[https://github.com/Jouleverse/workspace/issues/8|wp-8]] 区块链浏览器(小时) || [[https://github.com/Jouleverse/workspace/issues/13|wp-13]] 白皮书和网站(小时) || [[https://github.com/Jouleverse/workspace/issues/15|wp-15]]核心治理工具集开发(小时)||工作量(小时)合计||激励额度(万wj)
+| Core Id(按多签人、记账节点、见证节点、无节点贡献者从上到下排列) || 链上签到(签1,未签0)|| [[https://github.com/jouleverse/workspace/issues/1|WP-1]] 多签人(小时) || 主网记账(个) || 主网见证(个) ||[[https://github.com/jouleverse/workspace/issues/2|WP-2]] 节点有效汇总(小时)  || [[https://github.com/Jouleverse/workspace/tree/main/data|wp-3]] powh(小时) || [[https://github.com/Jouleverse/workspace/issues/6|WP-6]] CGC(小时) || [[https://github.com/Jouleverse/workspace/issues/7|wp-7]] 节点审计(小时) || [[https://github.com/Jouleverse/workspace/issues/8|wp-8]] 区块链浏览器(小时) || [[https://github.com/Jouleverse/workspace/issues/13|wp-13]] 白皮书和网站(小时) || [[https://github.com/Jouleverse/workspace/issues/15|wp-15]]核心治理工具集开发(小时)||工作量(小时)合计||激励额度(万wj)
 |-
 | <span id="t0"></span>[[#j0|J-0]] || 1 || 1.5 || 1 || 1 || 10 || - || 9.5 || - || - || 3 || - || 24 || 110.76
 |-
@@ -127,7 +127,7 @@
 
 === 〇｜数据源独立性声明 ===
 
-* '''本次计算数据源'''：Jouleverse/workspace '''issue#2'''（8月节点审计，2026-09-03）／'''issue#3'''（WP-3）／'''issue#7'''（WP-7）／'''issue#8'''（WP-8）／'''issue#15'''（WP-15）；'''[https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]'''（JVCore 0x8d2144…，块窗 8,033,634~8,212,194，RPC '''$JNS_DAO_RPC_URL'''〔内部端点，可匿名访问，属内部基础设施，不保证长期开放与可用性；不公开列出地址，如需核对请联系 J-53〕）；'''open-meetings/[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830]'''（5 场）；'''wiki blog/2026/202608/'''（4 篇已发表稿）；'''spec rev8 / v2 rev9 费率'''。
+* '''本次计算数据源'''：Jouleverse/workspace '''issue#2'''（8月节点审计，2026-09-03）／'''issue#3'''（WP-3）／'''issue#7'''（WP-7）／'''issue#8'''（WP-8）／'''issue#15'''（WP-15）；'''[https://jscan.jnsdao.com/address/0x8d214415b9c5F5E4Cf4CbCfb4a5DEd47fb516392 链上记录·JVCore 地址页]'''（JVCore 0x8d2144…，块窗 8,033,634~8,212,194）；'''open-meetings/[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260802.md 0802]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260809.md 0809]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260816.md 0816]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260823.md 0823]·[https://github.com/Jouleverse/open-meetings/blob/main/core/CGC20260830.md 0830]'''（5 场）；'''wiki blog/2026/202608/'''（4 篇已发表稿）；'''spec rev8 / v2 rev9 费率'''。
 * '''独立性声明'''：本附注结果系依据 spec 规则、基于上述原始证据'''独立算出'''；对照表（2026-08月powh复核明细表）'''仅用于比对'''，'''未读取对照表回填'''。
 * '''例外标注'''：无。
 
@@ -136,17 +136,17 @@
 {|
 ! 项 !! 内容 !! 出处 !! 分级
 |-
-| 换算公式 || '''规范式：个人 WJ（万WJ）= ROUNDDOWN( 个人h ÷ 当月Σh × 1200, 2 )'''（等价于 TRUNC(…,2)；正数下逐人结果与旧式完全相同） || （2026-09-24 定稿）；旧式来源：飞书 8 月表 WJ 列公式 AK4 = 个人h；AK$34 = 当月Σh（绝对引用）；FLOOR(…×120000,1)/100 ⇒ 120000/100 = 1200 || B
+| 换算公式 || '''规范式：个人 WJ（万WJ）= ROUNDDOWN( 个人h ÷ 当月Σh × 1200, 2 )'''（等价于 TRUNC(…,2)；正数下逐人结果与旧式完全相同） || 旧式来源：飞书 8 月表 WJ 列公式 AK4 = 个人h；AK$34 = 当月Σh（绝对引用）；FLOOR(…×120000,1)/100 ⇒ 120000/100 = 1200 || B
 |-
-| 池值 || '''每月激励池 = 1200 万WJ（恒定）'''；若将来调整为 X 万WJ ⇒ 公式直接写 X || （2026-09-24 定稿） || B
+| 池值 || '''每月激励池 = 1200 万WJ（恒定）'''；若将来调整为 X 万WJ ⇒ 公式直接写 X ||  || B
 |-
-| 旧式说明 || 旧式 FLOOR(…×120000,1)/100 与规范式'''等价，沿用不致误'''；但规范式'''直观体现池值 1200'''；120000 = 1200×100（×100/÷100 仅为绕开 FLOOR 只能取整的限制，'''100 不是池值的一部分'''） || （2026-09-24 定稿） || B
+| 旧式说明 || 旧式 FLOOR(…×120000,1)/100 与规范式'''等价，沿用不致误'''；但规范式'''直观体现池值 1200'''；120000 = 1200×100（×100/÷100 仅为绕开 FLOOR 只能取整的限制，'''100 不是池值的一部分'''） ||  || B
 |-
-| 尾差裁定 || 尾差 = '''Σ被舍去的第三位小数''' = 1200 − Σ实发，'''一律归入创世金库''' || （2026-09-24 定稿） || B
+| 尾差裁定 || 尾差 = '''Σ被舍去的第三位小数''' = 1200 − Σ实发，'''一律归入创世金库''' ||  || B
 |-
-| 单位 || 金额单位一律为 '''万WJ'''；J-29 = 122.30 万WJ = 1,223,000 WJ；全池 = 1200.00 万WJ = 12,000,000 WJ || （2026-09-24 定稿） || B
+| 单位 || 金额单位一律为 '''万WJ'''；J-29 = 122.30 万WJ = 1,223,000 WJ；全池 = 1200.00 万WJ = 12,000,000 WJ ||  || B
 |-
-| 费率·记账节点 || 5h/月/独立IP节点（签到）；未签到 slash 减记 '''0.5h''' || work-package-specs 2.6 + 考勤条款 || B
+| 费率·记账节点 || 5h/月/独立IP节点（签到）；未签到 slash 减记 '''0.5h''' || work-package-specs 2.6 + 签到条款 || B
 |-
 | 费率·见证节点 || 5h/月/独立IP节点（签到）；未签到 slash 减记 '''0h''' || 同上 || B
 |-
@@ -164,20 +164,18 @@
 {| 
 ! 类别 !! 直连状态 !! 说明
 |-
-| 多签人名单（WP-1 依据） || ✅ 可直连 || 组织仓库 contracts-reference.md「创世金库多签人」表（公开可访问）
+| 多签人名单（WP-1 依据） || ✅ 可直连 || [https://github.com/Jouleverse/workspace/blob/main/script/contracts-reference.md 组织仓库 contracts-reference.md「创世金库多签人」表]（点击直达）
 |-
-| WP 上报凭据（issue） || ✅ 可直连 || 均带 #issuecomment-xxx 锚点，直达 9/3 上报评论（非 issue 首页）
+| WP 上报凭据（issue） || ✅ 可直连 || [https://github.com/Jouleverse/workspace/issues/3 WP-3]·[https://github.com/Jouleverse/workspace/issues/7 WP-7]·[https://github.com/Jouleverse/workspace/issues/8 WP-8]·[https://github.com/Jouleverse/workspace/issues/15 WP-15]·[https://github.com/Jouleverse/workspace/issues/2 WP-2审计]（均带 #issuecomment 锚点，直达 9/3 上报评论）
 |-
-| 会议纪要（WP-6） || ✅ 可直连 || open-meetings/core/ 五个 .md 文件
+| 会议纪要（WP-6） || ✅ 可直连 || [https://github.com/Jouleverse/open-meetings/tree/main/core open-meetings/core/] 五个 .md 文件（0802/0809/0816/0823/0830）
 |-
-| 已发表稿件（WP-13） || ✅ 可直连 || wiki blog/2026/202608/ 四篇 .md
+| 已发表稿件（WP-13） || ✅ 可直连 || [https://github.com/Jouleverse/wiki/tree/main/blog/2026/202608 wiki blog/2026/202608/] 四篇 .md
 |-
 | 链上签到（WP-2） || ✅ 可自助核对 || 公开入口（均已实测 HTTP 200）：① '''Core 签到页''' [https://jscan.jnsdao.com/#/core/checkin/ jscan.jnsdao.com/#/core/checkin/] —— 按月浏览（含 2026-08）各 Core ID 的'''签到次数与首/末区块、首/末时间'''；② '''地址页''' '''https://jscan.jnsdao.com/#/address/<本人地址>''' —— '''填入本人地址'''，于「Core链上签到」区块查看本人持有的签到徽章（含月份标签）。'''逐笔 tx hash'''：8 月未公开归档（`data/powh-transactionHash-*` 现存最新至 202606）⇒ 逐笔直连仍不可构造；但'''签到有无之核对已可自助完成，无需授权'''（实测：jscan 公开 tx 页格式 '''#/tx/<hash>''' 为 200，受限于未归档）
-|-
-| 内部 RPC（$JNS_DAO_RPC_URL，内部端点，可匿名访问，不保证长期开放） || 🔴 不列链接 || 属内部基础设施、不保证长期开放与可用性 ⇒ 不公开列出地址，一律以 $JNS_DAO_RPC_URL 占位；如需核对请联系 J-53
 |}
 
-> 链上签到自查：入口见上表（'''Core 签到页''' / '''地址页填本人地址'''）；'''逐笔 tx hash 因 8 月未归档暂不可直连'''，如需逐笔定位请联系 J-53 代查。
+> 链上签到自查：入口见上表（'''Core 签到页''' / '''地址页填本人地址'''）；'''逐笔 tx hash 因 8 月未归档暂不可直连'''，如需逐笔定位或有疑问请在统计答疑 Issue 提出。
 
 === 一｜取数完整性核查（9/4–9/15） ===
 
@@ -549,7 +547,7 @@
 
 === 四｜表尾说明 ===
 
-* '''本附注与上方表格逐行对应，供各位核对本人数据；如有疑问请联系 J-53。'''
+* '''本附注与上方表格逐行对应，供各位核对本人数据；如有疑问请在统计答疑 Issue 提出：[https://github.com/Jouleverse/workspace/issues/105 统计数据答疑 Issue]（注明 J-N + 具体条目）。'''
 
 执行人：
 
